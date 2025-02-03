@@ -1,0 +1,225 @@
+
+.slideshow-container {
+    position: relative;
+    height: 750px;
+    overflow: hidden;
+    
+}
+
+.mySlides {
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.mySlides img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+}
+
+.active {
+    opacity: 1;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%; 
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    position: absolute;
+}
+
+.restaurant-title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    top: 30%;
+    bottom: 50%;
+    
+    
+}
+
+
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+
+.restaurant-title h1 {
+    font-size: 100px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+   width: 100%;
+}
+
+
+.restaurant-title h1 {
+   display: inline-block;
+    -webkit-transition: text-shadow 0.2s linear;
+    -moz-transition: text-shadow 0.2s linear;
+    -ms-transition: text-shadow 0.2s linear;
+    -o-transition: text-shadow 0.2s linear;
+    transition: text-shadow 0.2s linear;
+}
+
+
+.restaurant-title h2 {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.restaurant-title p {
+    font-size: 22px;
+    font-weight: 200;
+    margin-bottom: 70px;
+    word-spacing: 5px;
+    margin-top: 250px;
+    
+
+    
+}
+
+
+
+
+
+
+
+
+.restaurant-title h1  {
+	color: #fff;
+	font-size: 8em;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+
+
+.restaurant-title h1:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px red;
+}
+
+
+.restaurant-title h1:nth-child(2) {
+	color: white;
+	animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.restaurant-title a {
+    margin: 0 35px;
+    text-decoration: none;
+}
+.book-table-button, .book-cushine-button {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background: transparent;
+    border-width: 5px;
+    border-style: solid;
+    border-color: red;
+    padding: 10px 10px;
+    border-radius: 2px;
+    transition: 0.15s;
+    border-radius: 100px;
+    margin-left: 400px;
+    margin-right: 200px;
+    margin-top: 500px;
+}
+
+.book-table-button:hover, .book-cushine-button:hover {
+    color: var(--neutral-color);
+    background-color: #f8c6c6;
+    color: var(--secondary-color);
+    font-weight:500;
+    padding: 10px 25px;
+}
+
+.book-table-button:active, .book-cushine-button:active {
+    color: var(--neutral-color);
+    background-color: white;
+    color: var(--secondary-color);
+    font-weight:500;
+}
+
+
+
+
+
